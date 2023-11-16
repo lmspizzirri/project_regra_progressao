@@ -24,15 +24,15 @@ public class App {
     double somaNotas = 0;
 
     for (int i = 0; i < qntAtividades; i++) {
-      System.out.println("Digite o nome da atividade" + (i + 1) + ":");
+      System.out.println("Digite o nome da atividade " + (i + 1) + ":");
       nomeAtividades[i] = scanner.nextLine();
 
-      System.out.println("Digite o peso da atividade" + (i + 1) + ":");
+      System.out.println("Digite o peso da atividade " + (i + 1) + ":");
       pesoAtividades[i] = scanner.nextInt();
       somaDosPesos += pesoAtividades[i];
       scanner.nextLine();
 
-      System.out.println("Digite sua nota obtida na atividade" + nomeAtividades[i] + ":");
+      System.out.println("Digite a nota obtida para " + nomeAtividades[i] + ":");
       notaAtividades[i] = scanner.nextInt();
       somaNotas += pesoAtividades[i] * notaAtividades[i];
       scanner.nextLine();
@@ -54,7 +54,7 @@ public class App {
       System.out.println(
           "Lamentamos informar que, com base na sua pontuação alcançada neste período,"
           + notaFinal
-              + "você não atingiu a pontuação mínima necessária para sua aprovação.");
+              + "%, você não atingiu a pontuação mínima necessária para sua aprovação.");
     }
   }
 }
