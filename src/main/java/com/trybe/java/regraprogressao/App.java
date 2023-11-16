@@ -19,6 +19,7 @@ public class App {
 
     String[] nomeAtividades = new String[qntAtividades];
     int[] pesoAtividades = new int[qntAtividades];
+    int[] notaAtividades = new int[qntAtividades];
     int somaDosPesos = 0;
 
     for (int i = 0; i < qntAtividades; i++) {
@@ -28,6 +29,10 @@ public class App {
       System.out.println("Digite o peso da atividade" + (i + 1) + ":");
       pesoAtividades[i] = scanner.nextInt();
       somaDosPesos += pesoAtividades[i];
+
+      System.out.println("Digite sua nota obtida na atividade" + (i + 1) + ":");
+      notaAtividades[i] = scanner.nextInt();
+
       scanner.nextLine();
     }
 
