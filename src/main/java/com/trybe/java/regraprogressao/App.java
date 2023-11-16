@@ -29,10 +29,10 @@ public class App {
       System.out.println("Digite o peso da atividade" + (i + 1) + ":");
       pesoAtividades[i] = scanner.nextInt();
       somaDosPesos += pesoAtividades[i];
+      scanner.nextLine();
 
-      System.out.println("Digite sua nota obtida na atividade" + (i + 1) + ":");
+      System.out.println("Digite sua nota obtida na atividade" + nomeAtividades[i] + ":");
       notaAtividades[i] = scanner.nextInt();
-
       scanner.nextLine();
     }
 
